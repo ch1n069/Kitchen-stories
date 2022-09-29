@@ -1,6 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Popular() {
+  // use state
+  const [popular, setPopular] = useState([]);
+
   useEffect(() => {
     getPopular();
   }, []);
@@ -11,8 +14,21 @@ function Popular() {
     );
     const data = await api.json();
     console.log(data);
+    setPopular(data.recipes);
   };
-  return <div>popular</div>;
+  console.log(popular);
+
+  return (
+    <div>
+      {popular.map((recipe) => {
+        return (
+          <div>
+            <p>{recipe.title}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Popular;
