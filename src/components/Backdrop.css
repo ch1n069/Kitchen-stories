@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&family=Oswald:wght@200&family=Poppins:wght@100;300;400;900&display=swap");
+.card {
+    width: 220px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.body {
+    height: 100vh;
+    background-image: url;
+    background: #c33764;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient( rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://images.pexels.com/photos/4262010/pexels-photo-4262010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://images.pexels.com/photos/4262010/pexels-photo-4262010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    /* The least supported option. */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+.body::before {
+    background: rgba(255, 0, 255, 0.2);
+}
+
+.wrapper {
+    margin: 2rem 0rem;
+}
+
+h2 {
+    font-family: "Poppins";
+    font-weight: 400;
+    color: white;
+}
+
+.button {
+    margin-left: 33%;
+}
