@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 
+import "./Popular.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+// imports are above
 function Popular() {
   // use state
   const [popular, setPopular] = useState([]);
@@ -19,10 +23,11 @@ function Popular() {
   console.log(popular);
 
   return (
-    <div>
+    <div className="wrapper">
       {popular.map((recipe) => {
         return (
-          <div>
+          <div className="card" key={recipe.id}>
+            <img src={recipe.image} alt={recipe.title} />
             <p>{recipe.title}</p>
           </div>
         );

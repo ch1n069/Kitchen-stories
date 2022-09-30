@@ -1,0 +1,11 @@
+.card {
+    width: 220px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.wrapper {
+    margin: 2rem 0rem;
+}
