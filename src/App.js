@@ -5,10 +5,12 @@ import "./App.css";
 import { Nav } from "react-bootstrap";
 import Home from "./pages/Home";
 import Pages from "./pages/Pages";
+import Backdrop from "./components/Backdrop";
 function App() {
   return (
     <div>
-      <Pages />
+      <Home />
+      {/* <Backdrop /> */}
     </div>
   );
 }
